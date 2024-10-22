@@ -5,7 +5,7 @@ import sqlalchemy.dialects.postgresql as pg
 
 
 class User(SQLModel, table = True):
-    __tablename__ = "Users"
+    __tablename__ = "users"
 
     uid: uuid.UUID = Field(
         sa_column=Column(

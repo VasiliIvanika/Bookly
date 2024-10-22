@@ -10,7 +10,7 @@ auth_router = APIRouter()
 user_service = UserService()
 
 
-auth_router.post(
+@auth_router.post(
     "/signup",
     response_model=UserModel,
     status_code=status.HTTP_201_CREATED,
